@@ -1,0 +1,138 @@
+/* ! Reset */
+body,
+html {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+img {
+  height: auto;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+h6 {
+  font-size: 0.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+/*********** CONTAINER ************/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+}
+
+/***** BOX ****/
+.box {
+  width: max-content;
+  overflow: hidden;
+  height: max-content;
+  background-color: white;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.499);
+  border-radius: 10px;
+}
+
+/* Number result */
+.result {
+  width: 100%;
+  text-align: end;
+  padding: 10px;
+  background: #434c52;
+  color: white;
+}
+
+/* Simbol calc */
+.simbol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.simbol div {
+  text-align: center;
+  width: 50px;
+  padding: 5px;
+  height: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.328);
+  background-color: #d3dce4;
+  cursor: pointer;
+}
+
+.simbol div:active {
+  background-color: grey;
+}
+
+/* Calculator number and symbol */
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+}
+
+.calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.328);
+  cursor: pointer;
+}
+
+.calculator div:active {
+  background-color: #d3dce4;
+}
+
+.calculator .same-symbol:active {
+  background-color: red;
+}
+
+/* Symbol same design */
+.same-symbol {
+  background-color: #f27076;
+  grid-template-rows: 100%;
+  grid-column: 4;
+  grid-row: 1/5;
+  cursor: pointer;
+}
